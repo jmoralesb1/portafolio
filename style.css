@@ -12,7 +12,7 @@ body {
     background-color: #000000;
     color: #f6f6f6;
     /*Si quieremos que nuestra pagina ocupe el 100% de la altura del navegador usamos lo siguiente:*/
-    height: 100vh;
+    /*height: 100vh;*/
     box-sizing: border-box;
 }
 
@@ -77,6 +77,21 @@ strong {
     text-decoration: none;
     color: #f6f6f6;
     border: 2px solid #17d9d9;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/*Sobreado al boton cuando se pone el cursor encima*/
+.presentacion_enlaces_link:hover{
+    background-color: #272727;
 }
 
-
+.footer {
+    background-color: #17d9d9;
+    padding: 24px;
+    color:#000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
