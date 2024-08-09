@@ -16,6 +16,23 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #17d9d9;
+}
+
 strong {
     color: #d91778;
 }
@@ -30,7 +47,7 @@ strong {
     /*Centraliza todos los elementos al centro de una imagen si hay*/
     align-items: center;
     /*Da espacio a los lados del body dentro de la pagina*/
-    margin: 10% 15%;
+    padding: 7% 15%;
     /*Espacio entre cada elemento dentro del body*/
     justify-content: space-between;
 }
