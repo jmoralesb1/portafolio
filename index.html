@@ -1,38 +1,262 @@
 <!DOCTYPE html>
-<html lang="es-co">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaider Morales — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 <body>
-    <header class="header">
-        <nav class="header_menu">
-            <a class="header_menu_link" href="index.html">Home</a>
-            <a class="header_menu_link" href="about.html">About me</a>
-        </nav>
-    </header>
-    <main class="presentacion">
-        <section class="presentacion_contenido">
-            <h1 class="presentacion_contenido_titulo">
-                Eleve tu negocio digital a otro nivel <strong class="titulo-destaque">con un Front-end de calidad!</strong>
-            </h1>
-            <p class="presentacion_contenido_texto">
-                ¡Hola! Soy <strong>Jaider Morales</strong>, Abogado y desarrollador Front-end con especialización en React, 
-                HTML y CSS. Ayudo a pequeños negocios y diseñadores a llevar a cabo buenas ideas. ¿Hablamos?
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">JM<span class="dot">.</span></a>
+    <ul class="nav__links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Sobre mí</a></li>
+      <li><a href="#projects" class="mobile-link">Proyectos</a></li>
+      <li><a href="#contact" class="mobile-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="hero__content">
+        <span class="hero__label reveal">Disponible para trabajar</span>
+        <h1 class="hero__name reveal">
+          Jaider<br /><span class="gradient-text">Morales</span>
+        </h1>
+        <p class="hero__tagline reveal">
+          Desarrollador Front-end &amp; Entusiasta de Legal Tech.<br />
+          Construyo interfaces limpias y pipelines de datos con propósito.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn--ghost">Hablemos</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__photo-wrap reveal">
+            <img src="./assets/Jaider.png" alt="Jaider Morales" class="about__photo" />
+            <div class="about__photo-border"></div>
+          </div>
+          <div class="about__text">
+            <p class="section__label reveal">Sobre mí</p>
+            <h2 class="section__title reveal">Abogado que aprendió<br />a hablar con máquinas</h2>
+            <p class="about__bio reveal">
+              Soy <strong>Jaider Morales</strong>, abogado especializado en derecho civil, familia y comercial,
+              y desarrollador Front-end con sólidos fundamentos en React, Java, Python y análisis de datos.
+              Estudio Ingeniería en el Instituto Universitario Digital de Antioquia, donde integro mi
+              experiencia legal con pensamiento computacional.
             </p>
-            <div class="presentacion_enlaces">
-                <h2 class="presentacion_enlaces_subtitulos">Accede a mis redes:</h2>
-                <a class="presentacion_enlaces_link" href="https://www.facebook.com/"> <img src="./assets/facebook-32.png" alt=""> Facebook</a>
-                <a class="presentacion_enlaces_link" href="https://wa.me/573188711933"> <img src="./assets/whatsapp-32.png" alt=""> WhatsApp</a>
-                <a class="presentacion_enlaces_link" href="https://www.linkedin.com/in/jaidermoralesbautista/"> <img src="./assets/linkedin.png" alt=""> LinkedIn</a>
+            <p class="about__bio reveal">
+              Mi perfil único me permite construir soluciones tecnológicas con consciencia jurídica —
+              una combinación cada vez más demandada en Legal Tech, GovTech y sistemas de cumplimiento.
+            </p>
+            <div class="skills reveal">
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Big Data</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Legal Tech</span>
             </div>
-        </section>
-        <img class="foto" src="./assets/Jaider.png" alt="Imagen de Jaider">
-    </main>
-    <footer class="footer">
-        <p>Desarrollado por Jaider Morales</p>
-    </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section__label reveal">Proyectos destacados</p>
+        <h2 class="section__title reveal">Lo que he construido</h2>
+        <div class="projects__grid">
+
+          <article class="card card--featured reveal">
+            <div class="card__header">
+              <div class="card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <span class="card__badge">Python</span>
+            </div>
+            <h3 class="card__title">Epi Pipeline</h3>
+            <p class="card__desc">Pipeline de vigilancia epidemiológica en tiempo real con detección de anomalías para Influenza, COVID-19 y VSR. Arquitectura orientada a datos con Python.</p>
+            <div class="card__tags">
+              <span>Python</span><span>Data Engineering</span><span>Anomaly Detection</span><span>Real-time</span>
+            </div>
+            <div class="card__links">
+              <a href="https://github.com/jmoralesb1/epi-pipeline" target="_blank" rel="noopener" class="card__link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Ver código
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__header">
+              <div class="card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <span class="card__badge">Java</span>
+            </div>
+            <h3 class="card__title">Parqueadero</h3>
+            <p class="card__desc">Sistema de gestión de parqueadero con control de vehículos, tarifas y reportes. Arquitectura orientada a objetos con Java.</p>
+            <div class="card__tags"><span>Java</span><span>OOP</span><span>Backend</span></div>
+            <div class="card__links">
+              <a href="https://github.com/jmoralesb1/parqueadero" target="_blank" rel="noopener" class="card__link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Ver código
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__header">
+              <div class="card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <span class="card__badge">Python</span>
+            </div>
+            <h3 class="card__title">Big Data Subject</h3>
+            <p class="card__desc">Análisis y procesamiento de grandes volúmenes de datos. Notebooks de Jupyter con pipelines de limpieza, exploración y visualización.</p>
+            <div class="card__tags"><span>Python</span><span>Jupyter</span><span>Big Data</span><span>Data Analysis</span></div>
+            <div class="card__links">
+              <a href="https://github.com/jmoralesb1/bigdata_subject" target="_blank" rel="noopener" class="card__link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                Ver código
+              </a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__header">
+              <div class="card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <span class="card__badge">JavaScript</span>
+            </div>
+            <h3 class="card__title">Text Encryptor</h3>
+            <p class="card__desc">Aplicación web de cifrado y descifrado de texto con interfaz limpia e intuitiva. Implementación de algoritmos de sustitución en JavaScript puro.</p>
+            <div class="card__tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+            <div class="card__links">
+              <a href="https://github.com/jmoralesb1/text_encryptor" target="_blank" rel="noopener" class="card__link">Ver código</a>
+              <a href="https://jmoralesb1.github.io/text_encryptor" target="_blank" rel="noopener" class="card__link card__link--demo">Demo</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__header">
+              <div class="card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <span class="card__badge">JavaScript</span>
+            </div>
+            <h3 class="card__title">Juego Secreto</h3>
+            <p class="card__desc">Juego interactivo de número secreto con lógica de adivinanza y retroalimentación al usuario. Manipulación del DOM y Web Speech API.</p>
+            <div class="card__tags"><span>JavaScript</span><span>DOM</span><span>Web API</span></div>
+            <div class="card__links">
+              <a href="https://github.com/jmoralesb1/juego-secreto" target="_blank" rel="noopener" class="card__link">Ver código</a>
+              <a href="https://jmoralesb1.github.io/juego-secreto" target="_blank" rel="noopener" class="card__link card__link--demo">Demo</a>
+            </div>
+          </article>
+
+          <article class="card card--cta reveal">
+            <a href="https://github.com/jmoralesb1" target="_blank" rel="noopener" class="card__cta-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>Ver todos los repositorios</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <p class="section__label">Contacto</p>
+          <h2 class="section__title">¿Trabajamos juntos?</h2>
+          <p class="contact__sub">Estoy disponible para proyectos freelance, posiciones full-time y colaboraciones. No dudes en escribirme.</p>
+          <div class="contact__links">
+            <a href="https://wa.me/573188711933" target="_blank" rel="noopener" class="contact__btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/jaidermoralesbautista/" target="_blank" rel="noopener" class="contact__btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/jmoralesb1" target="_blank" rel="noopener" class="contact__btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Diseñado y construido por <strong>Jaider Morales</strong> · 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        mobileMenu.classList.remove('open');
+      });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
